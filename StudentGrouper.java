@@ -176,7 +176,7 @@ public class StudentGrouper extends JFrame {
 							tickedTicks.add(ticks.get(j));
 						}
 					}
-					for(int k = 0; k < Math.floor(tickedTicks.size()/(Integer)spinner.getValue()); k++)
+					for(int k = -1; k < Math.floor(tickedTicks.size()/(Integer)spinner.getValue())*2; k++)
 					{
 						String groupStr = "";
 						for(int i = 0; i < (Integer)spinner.getValue(); i++)
